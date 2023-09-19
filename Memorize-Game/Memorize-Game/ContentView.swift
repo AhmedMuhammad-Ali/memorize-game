@@ -8,20 +8,26 @@
 import SwiftUI
 
 struct ContentView: View {
-    let emojis = ["🤹🏻", "🧜🏻‍♂️", "🐣", "👨🏻‍🎤"]
+    let emojis = ["🤹🏻", "🧜🏻‍♂️", "🐣", "👨🏻‍🎤", "🐘", "🧀", "🍿"]
     @State var cardCount = 4
     
     var body: some View {
         VStack {
-            cards
+            Text("Memorize🏅").font(.largeTitle).fontWeight(.bold)
+            ScrollView {
+                cards
+            }.scrollIndicators(/*@START_MENU_TOKEN@*/.hidden/*@END_MENU_TOKEN@*/, axes: [.vertical])
+            Spacer()
+               
             cardCountAdjusters
         }
         .padding()
     }
     var cards: some View {
-        HStack {
+        LazyVGrid(columns: [GridItem(.adaptive(minimum: 120))]) {
             ForEach(0..<cardCount, id: \.self) { index in
                 CardView(content: emojis[index])
+                    .aspectRatio(1, contentMode: .fit)
             }
         }
         .foregroundColor(.orange)
@@ -66,13 +72,14 @@ struct CardView: View {
     var body: some View {
         ZStack {
             let roundedRectangle = RoundedRectangle(cornerRadius: 12.0)
-            if isFacedUp {
+            Group {
                 roundedRectangle.fill(.white)
                 roundedRectangle.strokeBorder(lineWidth: 3.0)
                 Text(content).font(.largeTitle)
-            } else {
-                roundedRectangle.fill()
             }
+            .opacity(isFacedUp ? 1 : 0)
+            roundedRectangle.fill().opacity(isFacedUp ? 0 : 1)
+            
         }
         .onTapGesture {
             isFacedUp.toggle()

@@ -14,6 +14,7 @@
 		60C9E8FD2AB1B36D007F2FD9 /* Memorize_GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C9E8FC2AB1B36D007F2FD9 /* Memorize_GameTests.swift */; };
 		60C9E9072AB1B36D007F2FD9 /* Memorize_GameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C9E9062AB1B36D007F2FD9 /* Memorize_GameUITests.swift */; };
 		60C9E9092AB1B36D007F2FD9 /* Memorize_GameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C9E9082AB1B36D007F2FD9 /* Memorize_GameUITestsLaunchTests.swift */; };
+		60EFDBFF2ABA25A500BF92B9 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EFDBFE2ABA25A400BF92B9 /* GridView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		60C9E9022AB1B36D007F2FD9 /* Memorize-GameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Memorize-GameUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		60C9E9062AB1B36D007F2FD9 /* Memorize_GameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memorize_GameUITests.swift; sourceTree = "<group>"; };
 		60C9E9082AB1B36D007F2FD9 /* Memorize_GameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memorize_GameUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		60EFDBFE2ABA25A400BF92B9 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				60C9E8EB2AB1B36B007F2FD9 /* Memorize_GameApp.swift */,
 				60C9E8ED2AB1B36B007F2FD9 /* ContentView.swift */,
+				60EFDBFE2ABA25A400BF92B9 /* GridView.swift */,
 				60C9E8EF2AB1B36D007F2FD9 /* Assets.xcassets */,
 				60C9E8F12AB1B36D007F2FD9 /* Preview Content */,
 			);
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				60C9E8EE2AB1B36B007F2FD9 /* ContentView.swift in Sources */,
+				60EFDBFF2ABA25A500BF92B9 /* GridView.swift in Sources */,
 				60C9E8EC2AB1B36B007F2FD9 /* Memorize_GameApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
