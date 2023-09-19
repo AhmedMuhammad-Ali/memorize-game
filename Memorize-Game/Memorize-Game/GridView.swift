@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// initial start with grids
 struct GridView: View {
     var body: some View {
         Grid(horizontalSpacing: 8, verticalSpacing: 8) {
