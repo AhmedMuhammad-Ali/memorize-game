@@ -10,7 +10,7 @@ import SwiftUI
 /// initial start with grids
 struct GridView: View {
     var body: some View {
-        Grid(horizontalSpacing: 8, verticalSpacing: 8) {
+        Grid {
             GridRow {
                 Text("Row 1")
                 ForEach(0..<2) { _ in Color.red.frame(height: 60) }
